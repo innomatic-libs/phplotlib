@@ -1,0 +1,13 @@
+
+
+
+                               TODO LIST
+                               =========
+
+
+
+- Antialiasing.
+- More chart types.
+- Cached charts.
+- Charts could be generated inside the Wui widget instance in place of the
+  webapp handler.

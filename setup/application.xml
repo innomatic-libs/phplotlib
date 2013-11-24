@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<application>
+	<definition>
+		<idname>phplotlib</idname>
+		<release>
+			<version>5.0-3</version>
+			<date>2008/02/15</date>
+			<changesfile>CHANGES</changesfile>
+		</release>
+		<description>A class for creating scientific and business charts.</description>
+		<category>libraries</category>
+		<iconfile></iconfile>
+		<dependencies>
+			<dependency>innomatic[5.0]</dependency>
+			<dependency>gd.extension</dependency>
+		</dependencies>
+		<options>
+			<!-- <option></option> -->
+		</options>
+		<legal>
+			<author>
+				<name>Afan Ottenheimer</name>
+				<email>afan@jeo.net</email>
+				<web>http://www.phplot.com/</web>
+			</author>
+			<copyright>Copyright (C) 1998,1999,2000,2001 Afan Ottenheimer,
+				afan@jeo.net</copyright>
+			<license>GPL / PHP</license>
+			<licensefile>LICENSE</licensefile>
+		</legal>
+		<support>
+			<supportemail>support@innomatica.it</supportemail>
+			<bugsemail>bugs@innomatica.it</bugsemail>
+			<maintainer>
+				<name>Alex Pagnoni</name>
+				<email>alex.pagnoni@innoteam.it</email>
+			</maintainer>
+		</support>
+	</definition>
+	<components>
+
+		<class name="phplot/PHPlot.php" />
+		<class name="phplot/PHPlotRGB.php" />
+		<class name="phplot/PHPlotWebAppHandler.php" />
+		
+		<extras name="benjamingothic.ttf" />
+
+		<wuiwidget name="phplot" file="WuiPhplot.php" />
+
+		<webapphandler name="phplot"
+			class="phplot/PHPlotWebAppHandler.php"
+			urlpattern="/phplot/*" listings="false" />
+
+		<tempdir name="phplot" />
+
+		<!--domainpanel
+			name="phplottest"
+			file="phplottest.php"
+			themeicon="kate"
+			category="tools"
+			catalog="phplot::phplot"/-->
+
+	</components>
+</application>

@@ -1,0 +1,34 @@
+5.0-3 - 2009/02/15
+------------------
+- Added the PHPlotWebAppHandler to display graphs. (Alex Pagnoni)
+
+
+
+5.0-2 - 2008/10/03
+------------------
+CHANGES:
+- Migration to Innomatic. (Alex Pagnoni)
+
+
+
+5.0-1 - 2004/08/15
+------------------
+CHANGES:
+- Updated to PHPlot 5.0 RC1. (Alex Pagnoni)
+
+
+
+4.4.6-2 - 2003/06/15
+--------------------
+NEW FEATURES:
+- Added Phplot Wui widget. (Alex Pagnoni)
+- Added phplot_regression() function. (Alex Pagnoni)
+
+CHANGES:
+- Better default colors. (Alex Pagnoni)
+- Better pie chart shape. (Alex Pagnoni)
+
+FIXES:
+- Fixed "Wrong Height for Legend Box" bug. (Alex Pagnoni, Jean-Fran�ois Gagnon)
+- Fixed bug that when using hex colors they are not converted. (Alex Pagnoni)
+- Fixed "Pie Charts with Total=0 reports division by zero" bug. (Alex Pagnoni)
