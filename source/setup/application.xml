@@ -3,8 +3,8 @@
 	<definition>
 		<idname>phplotlib</idname>
 		<release>
-			<version>5.0-3</version>
-			<date>2008/02/15</date>
+			<version>5.0-4</version>
+			<date>2013/11/24</date>
 			<changesfile>CHANGES</changesfile>
 		</release>
 		<description>A class for creating scientific and business charts.</description>
