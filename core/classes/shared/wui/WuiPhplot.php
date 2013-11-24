@@ -18,6 +18,7 @@ class WuiPhplot extends WuiWidget {
     var $mPointShape = 'dot'; // rect, circle, diamond, triangle, dot, line, halfline
     var $mPointSize = 5;
     var $mTitle = '';
+    var $mRetina = true;
 
     // Color
 
@@ -53,7 +54,10 @@ class WuiPhplot extends WuiWidget {
         if ( isset($this->mArgs['pointshape'] ) ) $this->mPointShape = $this->mArgs['pointshape'];
         if ( isset($this->mArgs['pointsize'] ) and is_numeric( $this->mArgs['pointsize'] ) ) $this->mPointSize = $this->mArgs['pointsize'];
         if ( isset($this->mArgs['title'] ) ) $this->mTitle = $this->mArgs['title'];
-
+        if ( isset($this->mArgs['retina'] ) and ($this->mArgs['retina'] == 'true' or $this->mArgs['retina'] == 'false') )
+        	$this->mRetina = $this->mArgs['retina'];
+        else $this->mRetina = 'true';
+        
         // Color
 
         if ( isset($this->mArgs['backgroundcolor'] ) ) $this->mBackgroundColor = $this->mArgs['backgroundcolor'];
@@ -72,8 +76,8 @@ class WuiPhplot extends WuiWidget {
 
         // Base
 
-        $args['width'] = $this->mWidth;
-        $args['height'] = $this->mHeight;
+        $args['width'] = $this->mRetina == 'true' ? $this->mWidth * 2 : $this->mWidth;
+        $args['height'] = $this->mRetina == 'true' ? $this->mHeight * 2 : $this->mHeight;
         $args['data'] = $this->mArgs['data'];
         $args['plottype'] = $this->mPlotType;
 
