@@ -12,6 +12,6 @@
     ],
     "require": {
         "innomatic/innomatic-legacy-installer": "^1.0@alpha",
-        "innomatic/innomatic-legacy": ">=6.4 <8.0"
+        "innomatic/innomatic-legacy": "*"
     }
 }
