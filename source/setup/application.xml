@@ -3,7 +3,7 @@
 	<definition>
 		<idname>phplotlib</idname>
 		<release>
-			<version>5.0-4</version>
+			<version>5.0.5</version>
 			<date>2013/11/24</date>
 			<changesfile>CHANGES</changesfile>
 		</release>
@@ -42,7 +42,7 @@
 		<class name="phplot/PHPlot.php" />
 		<class name="phplot/PHPlotRGB.php" />
 		<class name="phplot/PHPlotWebAppHandler.php" />
-		
+
 		<extras name="benjamingothic.ttf" />
 
 		<wuiwidget name="phplot" file="WuiPhplot.php" />
